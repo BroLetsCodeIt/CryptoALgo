@@ -14,7 +14,7 @@ void solve(){
       cout << "Enter the Key :" << endl;
       int key ; 
       cin >> key ;
-      if( key < 0 ){
+      while( key < 0 ){
         key = key + 26 ;
       }
       int len = s.length();
@@ -44,7 +44,7 @@ void solve(){
          int keyy;
          cout << "Enter the key : " << endl;
          cin >> keyy ;
-         if(keyy < 0) {
+         while(keyy < 0) {
             keyy = keyy + 26;
          }
          int lenn = w.length();
