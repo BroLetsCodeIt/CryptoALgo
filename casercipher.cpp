@@ -11,6 +11,12 @@ void solve(){
       string s;
       cout << "Enter the Plain text : " << endl;
       cin >> s;
+      cout << "Enter the Key :" << endl;
+      int key ; 
+      cin >> key ;
+      if( key < 0 ){
+        key = key + 26 ;
+      }
       int len = s.length();
 
       for(int i=0;i<len;i++){
@@ -23,7 +29,7 @@ void solve(){
       }
       vector<char> ch;
       for(int i=0 ; i<len ; i++){
-        ch.push_back( char(int(s[i]+3-65)%26 + 65));
+        ch.push_back( char(int(s[i]+key-65)%26 + 65));
       }
       cout << "The Cipher text : " << endl;
       for(int i=0 ; i<ch.size();i++){
@@ -35,6 +41,12 @@ void solve(){
          cout << "Enter the Cipher text :" << endl;
          string w;
          cin >> w;
+         int keyy;
+         cout << "Enter the key : " << endl;
+         cin >> keyy ;
+         if(keyy < 0) {
+            keyy = keyy + 26;
+         }
          int lenn = w.length();
 
          for(int i=0;i<lenn ; i++){
@@ -47,7 +59,7 @@ void solve(){
          }
          vector<char> chh;
          for(int i=0 ; i<lenn ; i++){
-            chh.push_back( char(int(w[i]-3+65)%26 + 65));
+            chh.push_back( char(int(w[i]-keyy+65)%26 + 65));
          }
          for(int j = 0;j<chh.size() ; j++){
             cout << chh[j] << " ";
