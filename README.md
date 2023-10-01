@@ -1,10 +1,15 @@
-# CryptoALgo
-In this Repo you will find :
-Encryption Technique:
-1 . Additive Cipher
-2 . Caesar Cipher
-3 . Affine Cipher
-...
-...
+---
+marp : true
+---
 
+## In this Repo you will find :
+
+> **Encryption Technique:**
+
+- Additive Cipher
+- Caesar Cipher
+- Affine Cipher
+- Multiplicative 
+
+...
 much more!
